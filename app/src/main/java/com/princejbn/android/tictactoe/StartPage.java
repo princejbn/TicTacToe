@@ -16,7 +16,13 @@ public class StartPage extends AppCompatActivity {
     }
     public void startGame(View view)
     {
-        Intent in=new Intent(this,MainActivity.class);
+        Intent in=new Intent(this,DoublePlayer.class);
+        startActivity(in);
+    }
+
+    public void playSinglePlayer(View view)
+    {
+        Intent in=new Intent(this,SinglePlayer.class);
         startActivity(in);
     }
 }

@@ -9,14 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".StartPage">
+        <activity
+            android:name=".DoublePlayer"
+            android:label="TicTacToe-2Player"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".StartPage"
+            android:parentActivityName=".StartPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".SinglePlayer"
+            android:label="TictacToe-1Player"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
